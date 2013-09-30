@@ -22,7 +22,7 @@ class Diagnostic < ActiveRecord::Base
 
 
 	def diagnostic_score
-		answer1 + answer2 + answer3 + answer4
+		answer1.to_i + answer2.to_i + answer3.to_i + answer4.to_i
 	end
 
 end
