@@ -1,0 +1,30 @@
+
+
+<head>
+  <style>
+
+body {
+  background-image: url(<%= asset_path 'blazer.jpg' %>)
+}
+
+div {
+  color: white;
+}
+  </style>
+</head>
+
+<div align="center">
+</header><h2>Blazer Sign up</h2>
+</div>
+<h2>Resend confirmation instructions</h2>
+
+<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div align="center"><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div align="center"><%= f.submit "Resend confirmation instructions" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>

@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: writer_types
+#
+#  id          :integer          not null, primary key
+#  writer_type :string(255)
+#  description :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  writer_type: MyString
+  description: MyText
+
+two:
+  writer_type: MyString
+  description: MyText
